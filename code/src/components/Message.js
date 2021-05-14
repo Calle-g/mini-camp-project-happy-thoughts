@@ -12,7 +12,6 @@ export const Message = (props) => {
   } = props
   dayjs.extend(relativeTime);
   const likeMessage = (messageId) => {
-    console.log(messageId);
     const likedUrl = `https://happy-thoughts-technigo.herokuapp.com/thoughts/${messageId}/like`
     fetch(likedUrl, {
       method: 'POST',
